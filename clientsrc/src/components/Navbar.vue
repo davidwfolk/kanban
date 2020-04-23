@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <router-link class="navbar-brand" :to="{ name: 'home' }">Kanban</router-link>
+    <router-link class="navbar-brand" :to="{ name: 'home' }"><img src="https://github.com/davidwfolk/kanban/blob/master/clientsrc/public/yak.png" />Kanban</router-link>
     <button
       class="navbar-toggler"
       type="button"
