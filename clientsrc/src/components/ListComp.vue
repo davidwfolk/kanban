@@ -133,7 +133,7 @@ span {
   padding: 5px 0 5px 0;
 }
 .bglist {
-  background-color: rgba(0, 32, 102, 0.2);
+  background-color: rgba(0, 20, 63, 0.7);
 }
 .textColor {
   color: yellow

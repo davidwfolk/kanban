@@ -3,7 +3,7 @@
     <div class="row mt-2 ml-2">
       <h6><strong>{{board.title}} - {{board.description}}</strong></h6>
     </div>
-    <div class="flex-row card border-0 bg-transparent text-dark">
+    <div class="flex-row card border-0 bg-transparent text-light">
       <list v-for="list in lists" :listData="list" :key="list._id"></list>
       <form>
         <input

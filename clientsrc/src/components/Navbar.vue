@@ -1,6 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <router-link class="navbar-brand" :to="{ name: 'home' }"><img src="https://github.com/davidwfolk/kanban/blob/master/clientsrc/public/yak.png" />Kanban</router-link>
+  <nav class="navbar navbar-expand-lg navbar-dark bggreen">
+    <router-link class="navbar-brand" :to="{ name: 'home'}">Kanban</router-link>
+    <img :src="image"/>
     <button
       class="navbar-toggler"
       type="button"
@@ -36,12 +37,16 @@
 <script>
 import axios from "axios";
 
+
 let _api = axios.create({
   baseURL: "https://localhost:3000",
   withCredentials: true
 });
 export default {
   name: "Navbar",
+  props: {
+    img: "../clientsrc/public/yak.png"
+  },
   methods: {
     async login() {
       await this.$auth.loginWithPopup();
@@ -59,4 +64,7 @@ export default {
 </script>
 
 <style>
+.bggreen {
+  background-color: rgb(0, 26, 0);
+}
 </style>

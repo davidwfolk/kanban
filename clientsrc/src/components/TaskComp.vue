@@ -1,5 +1,5 @@
 <template>
-  <div class="task bg-light text-dark border border-primary rounded">
+  <div class="task bgtask text-dark border border-primary rounded">
     <div v-if="!editing">
       <!-- Will be replaced by click on the task -->
       <li
@@ -166,4 +166,7 @@ export default {
 
 
 <style scoped>
+.bgtask {
+ background-color:rgba(255, 255, 255, 0.9);
+}
 </style>
