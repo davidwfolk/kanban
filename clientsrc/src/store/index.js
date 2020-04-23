@@ -85,6 +85,14 @@ export default new Vuex.Store({
           dispatch('getBoards')
         })
     },
+    async deleteBoard({commit, dispatch}, boardId) {
+      try {
+        let res = await api.delete("boards/" + boardId)
+        dispatch("getBoards")
+      } catch (error) {
+        console.error(error);
+      }
+    },
     //#endregion
 
 

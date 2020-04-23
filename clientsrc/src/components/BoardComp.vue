@@ -1,8 +1,8 @@
 <template>
-  <div class="board">
-<h1>THIS IS THE BOARD!!!!!!</h1>
-<p>{{boardData.title}}</p>
-<button @click="selectBoard()">Select Board</button>
+  <div class="board text-dark">
+<h4>{{boardData.title}}</h4>
+<button @click="selectBoard()">Select</button>
+<button @click="deleteBoard()">Delete</button>
 
   </div>
 </template>
@@ -23,6 +23,9 @@ export default {
         name: "board",
         params: {boardId: this.boardData.id}
       })
+    },
+    deleteBoard() {
+      this.$store.dispatch("deleteBoard", this.boardData.id)
     }
   },
   components:{}
