@@ -23,14 +23,14 @@
             <div class="modal-body">
               <comment class v-for="comment in comments" :commentData="comment" :key="comment._id"></comment>
               <div>
-                <form>
+                <form @submit.prevent="addNewComment()">
                   <input
                     type="text"
                     v-model="newComment.title"
                     class="bg-dark text-white input-group-sm border-0 text-center"
                     placeholder="New Comment"
                   />
-                  <button class="shadow-none border-0" @click="addNewComment()"></button>
+                  <button class="shadow-none border-0" type="submit"></button>
                 </form>
               </div>
             </div>
@@ -81,9 +81,9 @@
       <!--  -->
     </div>
     <div v-else>
-      <form>
+      <form @submit.prevent="editTask()"> 
         <input type="text" v-model="taskData.title" />
-        <button class="btn btn-sm btn-success" @click="editTask()">OK</button>
+        <button class="btn btn-sm btn-success" type="submit">OK</button>
       </form>
     </div>
       <div>

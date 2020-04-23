@@ -11,15 +11,15 @@
       <div class="col-12">
         <div id="card-display" class="row card border-0 bg-transparent text-light">
           <list v-for="list in lists" :listData="list" :key="list._id"></list>
-          <form>
+          <form @submit.prevent="addNewList()">
             <input
               type="text"
               v-model="newList.title"
               class="bg-dark text-white input-group-sm border-0 ml-2 rounded-lg mt-2"
               placeholder=" New List"
-              @submit="addNewList()"
+              
             />
-            <button class="display-5 btn m-0 p-0" type="submit" @click="addNewList()">
+            <button class="display-5 btn m-0 p-0" type="submit">
               <strong>+</strong>
             </button>
           </form>
