@@ -7,7 +7,7 @@
         class="p-1"
         data-toggle="modal"
         :data-target="'#commentBodyModal' + taskData.id"
-      >{{taskData.title}}
+      ><strong>{{taskData.title}}</strong>
       </li>
 
       <!-- Modal -->
