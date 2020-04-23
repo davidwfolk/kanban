@@ -27,10 +27,10 @@
                   <input
                     type="text"
                     v-model="newComment.title"
-                    class="bg-dark text-white input-group-sm border-0 ml-5"
+                    class="bg-dark text-white input-group-sm border-0 text-center"
                     placeholder="New Comment"
                   />
-                  <button @click="addNewComment()">submit</button>
+                  <button class="shadow-none border-0" @click="addNewComment()"></button>
                 </form>
               </div>
             </div>

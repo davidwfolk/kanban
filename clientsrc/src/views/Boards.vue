@@ -9,7 +9,6 @@
   <div class="container-fluid">
 
     <div class="flex-row card border-0 bg-transparent text-center text-light">
-    
     <BoardComp v-for="board in boards" :boardData="board" :key="board.id">
       <!-- <router-link :to="{name: 'board', params: {boardId: board.id}}">{{board.title}}</router-link> -->
     </BoardComp>

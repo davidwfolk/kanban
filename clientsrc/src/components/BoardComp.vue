@@ -1,9 +1,9 @@
 <template>
     <div class="col-3 card mx-2 mt-3 boarder-3 bg-dark p-2 text-primary">
-      <h4>{{boardData.title}}</h4>
+      <h4 class="text-info"><strong>{{boardData.title}}</strong></h4>
       <h6>{{boardData.description}}</h6>
       <button class="btn btn-light my-1" @click="selectBoard()">Select</button>
-      <button class="btn btn-light mb-1" @click="deleteBoard()">Delete</button>
+      <button class="btn btn-danger mb-1" @click="deleteBoard()">Delete</button>
     </div>
 </template>
 

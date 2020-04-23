@@ -1,8 +1,22 @@
 <template>
+<div class="container-fluid card">
+  <div class="row">
+    <div class="col-12">
+
   <div class="comment">
     <div v-if="!editing">
     <p>{{commentData.title}}</p>
-      <button class="btn btn-sm text-warning" @click="editing = true">
+    </div>
+    <div v-else>
+      <form>
+        <input type="text" v-model="commentData.title" />
+        <button class="btn text-warning mr-auto" @click="editComment()">submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+
+      <button class="btn btn-sm text-warning ml-5 mr-auto" @click="editing = true">
         <svg
           class="bi bi-pencil"
           width="1em"
@@ -23,7 +37,7 @@
           />
         </svg>
       </button>
-      <button class="btn btn-sm text-danger" @click="deleteComment()">
+      <button class="btn btn-sm text-danger mr-5 ml-auto" @click="deleteComment()">
         <svg
           class="bi bi-trash"
           width="1em"
@@ -42,14 +56,8 @@
           />
         </svg>
       </button>
-    </div>
-    <div v-else>
-      <form>
-        <input type="text" v-model="commentData.title" />
-        <button class="btn text-warning" @click="editComment()">submit</button>
-      </form>
-    </div>
   </div>
+</div>
 </template>
 
 

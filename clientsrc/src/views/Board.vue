@@ -1,20 +1,30 @@
 <template>
   <div class="board container-fluid">
     <div class="row mt-2 ml-2">
-      <h6><strong>{{board.title}} - {{board.description}}</strong></h6>
+      <div class="col-12">
+        <h6>
+          <strong>{{board.title}} - {{board.description}}</strong>
+        </h6>
+      </div>
     </div>
-    <div class="flex-row card border-0 bg-transparent text-light">
-      <list v-for="list in lists" :listData="list" :key="list._id"></list>
-      <form>
-        <input
-          type="text"
-          v-model="newList.title"
-          class="bg-dark text-white input-group-sm border-0 ml-2 rounded-lg mt-2"
-          placeholder=" New List"
-          @submit="addNewList()"
-        />
-        <button class="display-5 btn m-0 p-0" type="submit" @click="addNewList()"><strong>+</strong></button>
-      </form>
+    <div class="row p-2">
+      <div class="col-12">
+        <div id="card-display" class="row card border-0 bg-transparent text-light">
+          <list v-for="list in lists" :listData="list" :key="list._id"></list>
+          <form>
+            <input
+              type="text"
+              v-model="newList.title"
+              class="bg-dark text-white input-group-sm border-0 ml-2 rounded-lg mt-2"
+              placeholder=" New List"
+              @submit="addNewList()"
+            />
+            <button class="display-5 btn m-0 p-0" type="submit" @click="addNewList()">
+              <strong>+</strong>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -62,5 +72,7 @@ export default {
 </script>
 
 <style>
-
+#card-display {
+  flex-direction: row;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="list card bglist col-2 m-2 ml-2 p-2 border-0 rounded-lg">
+  <div class="list card bglist col-12 col-lg-2 mr-1 mb-2 p-2 border-0 rounded-lg">
     <div v-if="!editing">
       <div class="row">
         <div class="col-12">
@@ -68,7 +68,7 @@
           class="bg-dark text-white input-group-sm border-0 rounded-lg"
           placeholder=" New Task"
         />
-        <button class="display-5 btn m-0 p-0" @click="addNewTask()">
+        <button class="display-5 btn mr-1 p-0" @click="addNewTask()">
           <strong>+</strong>
         </button>
       </span>

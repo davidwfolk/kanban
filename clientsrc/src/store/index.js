@@ -197,7 +197,6 @@ export default new Vuex.Store({
       }
     },
     async addNewComment({ commit, dispatch }, newComment) {
-      debugger
       try {
         let res = await api.post("comment", newComment)
         // dispatch("getBoard", newTask.listId) //REVISIT AFTER SLEEP
