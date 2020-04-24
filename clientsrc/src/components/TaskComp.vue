@@ -4,7 +4,7 @@
       <!-- Will be replaced by click on the task -->
       <li
         type="button"
-        class="p-1"
+        class="p-1 display-5"
         data-toggle="modal"
         :data-target="'#commentBodyModal' + taskData.id"
       ><strong>{{taskData.title}}</strong>
@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <button class="btn text-secondary" @click="editing = true">
+      <button class="btn text-secondary p-0 mr-5" @click="editing = true">
         <svg
           class="bi bi-pencil-square"
           width="1em"
@@ -56,7 +56,7 @@
           />
         </svg>
       </button>
-      <button class="btn text-secondary" @click="deleteTask()">
+      <button class="btn text-secondary ml-5 p-0" @click="deleteTask()">
         <svg
           class="bi bi-trash2"
           width="1em"
@@ -89,7 +89,7 @@
       <div>
         <div class="dropdown">
           <button
-            class="btn-sm btn-secondary display-5 btn mb-1 py-0 px-1"
+            class="btn-sm bgtaskbtn display-5 text-white btn mb-1 py-0 px-1"
             type="button"
             id="dropdownMenu2"
             data-toggle="dropdown"
@@ -168,5 +168,8 @@ export default {
 <style scoped>
 .bgtask {
  background-color:rgba(255, 255, 255, 0.9);
+}
+.bgtaskbtn {
+  background-color: rgba(14, 6, 2, 0.7);
 }
 </style>

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-6 p-0 ml-2 mt-1 mb-1"><strong>{{listData.title}}</strong></div>
+            <h5 class="col-6 p-0 ml-2 mt-1 mb-1"><strong>{{listData.title}}</strong></h5>
             <div class="col-1">
               <button class="btn btn-sm textColor" @click="editing = true">
                 <svg

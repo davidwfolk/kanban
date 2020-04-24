@@ -5,7 +5,7 @@
 
   <div class="comment">
     <div v-if="!editing">
-    <h6 class="m-0">{{commentData.title}}</h6>
+    <h5 class="m-0">{{commentData.title}}</h5>
     </div>
     <div v-else>
       <form @submit.prevent="editComment()">
