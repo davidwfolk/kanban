@@ -46,3 +46,12 @@ $colors: (
 //   border-color: darken($color: $primary, $amount: 10);
 //   border-width: medium;
 // }
+
+.bg-image {
+  background-image: url("https://devicemax.com/wp-content/uploads/2017/06/img-banner-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+}

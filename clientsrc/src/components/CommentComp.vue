@@ -5,12 +5,12 @@
 
   <div class="comment">
     <div v-if="!editing">
-    <p>{{commentData.title}}</p>
+    <h6 class="m-0">{{commentData.title}}</h6>
     </div>
     <div v-else>
-      <form>
+      <form @submit.prevent="editComment()">
         <input type="text" v-model="commentData.title" />
-        <button class="btn text-warning mr-auto" @click="editComment()">submit</button>
+        <button class="btn text-warning mr-auto">submit</button>
       </form>
     </div>
     </div>

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-6 p-0 mt-1 mb-1"><strong>{{listData.title}}</strong></div>
+            <div class="col-6 p-0 ml-2 mt-1 mb-1"><strong>{{listData.title}}</strong></div>
             <div class="col-1">
               <button class="btn btn-sm textColor" @click="editing = true">
                 <svg
@@ -133,7 +133,7 @@ span {
   padding: 5px 0 5px 0;
 }
 .bglist {
-  background-color: rgba(0, 20, 63, 0.7);
+  background-color: rgba(14, 6, 2, 0.7);
 }
 .textColor {
   color: yellow

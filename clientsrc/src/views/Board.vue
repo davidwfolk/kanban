@@ -1,8 +1,8 @@
 <template>
-  <div class="board container-fluid">
+  <div class="board container-fluid bg-image">
     <div class="row mt-2 ml-2">
       <div class="col-12">
-        <h6>
+        <h6 class="text-light mt-2 p-0 m-0 text-left"> 
           <strong>{{board.title}} - {{board.description}}</strong>
         </h6>
       </div>
@@ -15,7 +15,7 @@
             <input
               type="text"
               v-model="newList.title"
-              class="bg-dark text-white input-group-sm border-0 ml-2 rounded-lg mt-2"
+              class="bg-light text-dark input-group-sm border-0 ml-2 rounded-lg mt-2"
               placeholder=" New List"
               
             />
